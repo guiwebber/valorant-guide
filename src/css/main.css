@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Valorant font";
+  src: url(../valorant/Valorant\ Font.ttf);
+}
+.fundo-video::after {
+  content: "";
+  width: 100vw;
+  background-color: #d5011d;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+#main .fundo-video {
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 92vh;
+  margin-top: -4px;
+}
+
+.fundo-video .video {
+  height: 100vh;
+}
+
+.conteudo {
+  height: 91.5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.conteudo-direita,
+.conteudo-esquerda {
+  z-index: 1;
+  position: relative;
+  color: white;
+  width: 500px;
+}
+
+.imagem-agente img {
+  width: 500px;
+}
+
+.nome-site {
+  font-size: 2.5rem;
+  color: #fd4556;
+  font-family: "Valorant font", sans-serif;
+  margin: 10px;
+}

@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Valorant font";
+  src: url(../valorant/Valorant\ Font.ttf);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  background-color: #252424;
+}
+
+#lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.itens {
+  width: 23%;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.imagens {
+  width: 350px;
+}
+
+.titulo {
+  padding: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.texto {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.texto .titulo {
+  font-family: "Valorant font";
+}
+.texto p {
+  font-weight: 400;
+  font-size: 1.5rem;
+} 
+
+.classes {
+  width: 50px;
+}
+
+.card {
+  width: 300px;
+  height: 540px;
+  margin: 30px;
+  background-color: #a9404e;
+  transition: 0.5s;
+}
+
+.divcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  cursor: pointer;
+  margin-top: -20px;
+  transition: 0.5s;
+}
+
+.azul {
+  background-color: rgba(45, 178, 244, 0.5);
+}
+
+.verde {
+  
+  background-color: rgba(169, 237, 73, 0.5);
+}
+
+.vermelho {
+  
+  background-color: rgba(250, 126, 2, 0.5);
+}
+
+.roxo {
+  
+  background-color: rgb(107, 71, 172, 0.5);
+}

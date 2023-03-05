@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Valorant font";
+  src: url(../valorant/Valorant\ Font.ttf);
+}
+#header {
+  width: 100%;
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
+.menu-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#header .menu-nav a img {
+  width: 180px;
+  animation: piscar 3s infinite ease-out;
+}
+#header .menu-nav .itens-menu {
+  display: flex;
+}
+#header .menu-nav .itens-menu .item {
+  margin: 30px 20px;
+  font-family: "Valorant font";
+}
+#header .menu-nav .itens-menu .item a:hover {
+  color: #fd4556;
+}
+
+/* HOOVER LINHA */
+#header .menu-nav .itens-menu .item .line:hover::after {
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #fd4556;
+  transition: 0.7s;
+}
+#header .menu-nav .itens-menu .item .line::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  background-color: #fd4556;
+  transition: 0.5s;
+}
+/* HOOVER LINHA  */
+
+#header .menu-nav .itens-menu .item a {
+  color: #fff;
+}
+#header .menu-nav .botao {
+  height: 33px;
+  color: #1e1e1e;
+  background-color: #fd4556;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+  width: 130px;
+  font-weight: 500;
+  font-family: "Valorant font";
+}
+#header .menu-nav .botao:hover {
+  color: white;
+  cursor: pointer;
+}
+#header .menu-nav .botao svg {
+  margin: -3px 5px;
+}
+@keyframes piscar {
+  10% {
+    opacity: 0.8;
+  }
+  20% {
+    opacity: 0.6;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}

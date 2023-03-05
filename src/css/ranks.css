@@ -1,0 +1,28 @@
+#lista li {
+  margin: 10px;
+  color: red;
+}
+img {
+  width: 50px;
+}
+p {
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252424;
+}
+
+#lista {
+  width: 1000px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
